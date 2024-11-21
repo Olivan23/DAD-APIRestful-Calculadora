@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora API Restful</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator-header">
+            <h1>Calculadora APIRestful</h1>
+        </div>
+
+        <div class="form-container">
+            <input type="number" id="num1" placeholder="Número 1" required>
+            <input type="number" id="num2" placeholder="Número 2" required>
+        </div>
+
+        <div class="button-container">
+            <button class="operation-btn" onclick="suma()">+</button>
+            <button class="operation-btn" onclick="resta()">-</button>
+            <button class="operation-btn" onclick="multiplicacion()">×</button>
+            <button class="operation-btn" onclick="division()">÷</button>
+            <button class="operation-btn" onclick="factorial()">!</button>
+            <button class="operation-btn" onclick="potencia()">^</button>
+            <button class="operation-btn" onclick="modulo()">%</button>
+            <button class="operation-btn" onclick="raizCuadrada()">√</button>
+            <button class="operation-btn" onclick="logaritmo()">log</button>
+            <button class="operation-btn" onclick="seno()">sin</button>
+            <button class="operation-btn" onclick="coseno()">cos</button>
+            <button class="operation-btn" onclick="tangente()">tan</button>
+            <button class="operation-btn" onclick="exponente()">exp</button>
+            <button class="operation-btn" onclick="senh()">senh</button>
+            <button class="operation-btn" onclick="cosh()">cosh</button>
+            <button class="operation-btn" onclick="tanh()">tanh</button>
+        </div>
+
+        <div class="result">
+            <h2>Resultado:</h2>
+            <p id="resultado">Esperando operación...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
